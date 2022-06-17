@@ -6,6 +6,7 @@ export default function Test(){
             <div>
                 <h1>Test Component</h1>
                 <p>Merhaba</p>
+                <button className="btn btn-danger">Test</button>
             </div>
     )
         
