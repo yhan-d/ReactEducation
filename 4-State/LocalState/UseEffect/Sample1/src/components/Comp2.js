@@ -1,14 +1,14 @@
 import React, { useState, useEffect} from 'react'
 
-export default function Comp1() {
+export default function Comp2() {
   const [count, setCount] = useState(0);
 
   useEffect( () => {
     setTimeout(() => {
           setCount(count => ++count)
-    },1000);
+            },1000);
   
-  })
+  },[])
 
   return (
     <>
@@ -18,3 +18,4 @@ export default function Comp1() {
 }
 //////
 /// useEffect sayfa açıldığı anda çalışmaya başlar. functiondan farkı bir buttona fln bağlamak gerekmez.
+//  [] koyarsak komut sadece birkez çağırılır

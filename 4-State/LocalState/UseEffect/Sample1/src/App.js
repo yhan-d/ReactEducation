@@ -1,10 +1,19 @@
 import Comp1 from "./components/Comp1";
+import Comp2 from "./components/Comp2";
+import Comp3 from "./components/Comp3";
 
 function App() {
   
   return (
     <>
+      <h1>Comp1</h1>
        <Comp1/> 
+       <hr></hr>
+       <h1>Comp2</h1>
+       <Comp2/>
+       <hr></hr>
+       <h1>Comp3</h1>
+       <Comp3/>
     </>
     
   );
@@ -12,10 +21,3 @@ function App() {
 
 export default App;
 
-// iki çeşit component var
-// 1-)function 2-)class
-// function da metotlar yazılıyordu.Sonradan state de eklendi.Daha kullanılır hale geldi.
-// functionda ki stateler UseState kullanıyor.Bununla birlikte hook ta kullanılıyor
-// class da hem metotlar hem stateler vardı.
-// classda ki stateler ComponentdidMount kullanıyor.
-// class componenti demode oldu.function componenti daha çok kullanılıyor.
