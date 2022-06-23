@@ -2,14 +2,14 @@ import React from 'react';
 import Search from './components/Search'
 
 
-const onFormSubmit = (text) => {
+const GetText = (text) => {
     console.log(text);
 }
 
 export default function App() {
   return (
     <div>
-      <Search onFormSubmit = {onFormSubmit}/>
+      <Search GetText = {GetText}/>
     </div>
   )
 }
