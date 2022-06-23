@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Search(props) {
   const [text, setText] = useState('');
-  const onsTextChange = (e) => {
+  const onTextChange = (e) => {
     setText(e.target.value);
     //console.log(text)
   }
@@ -15,7 +15,7 @@ export default function Search(props) {
         <form onSubmit={Submit}>
             <div className="form-group">
                 <label>Search</label>
-                <input className='form-control' type='text' value={text} onChange = {onsTextChange} />
+                <input className='form-control' type='text' value={text} onChange = {onTextChange} />
             </div>
         </form>
     </div>
