@@ -7,7 +7,7 @@ export default function VideoList(props) {
             <tr key={v.id.videoId}>
             <td>{v.id.videoId}</td>
             <td>{v.snippet.title}</td>
-            <td><img src = {v.snippet.thumbnails.medium.url} onClick = {console.log(v.id.videoId)}
+            <td><img src = {v.snippet.thumbnails.medium.url} onClick = {() => props.selectVideo(v)}
             style = {{cursor: "pointer"}}/></td>
           </tr>
         )
