@@ -2,6 +2,7 @@ import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Books from "./components/Books"
 import BooksEdit from "./components/BooksEdit"
+import BooksCreate from "./components/BooksCreate"
 import Layout from './components/Layout'
 import PageNotFound from './components/PageNotFound'
 
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/books" element={<Books/>}/>
           {/* <Route path="book" element={<Book/>}/> */}
           <Route path="/book/edit/:id" element={<BooksEdit/>}/>
+          <Route path="/book/create" element={<BooksCreate/>}/>
           <Route path="*" element={<PageNotFound />}/>
         </Routes>
     </BrowserRouter>

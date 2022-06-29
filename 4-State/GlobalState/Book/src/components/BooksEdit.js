@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useContext, BooksellerContext} from '../context/context'
@@ -7,6 +8,7 @@ export default function BooksEdit() {
   const location = new useLocation(); // hangi sayfada olduğumuzu bulmak için kullanılır
   const [state, dispatch] = useContext(BooksellerContext);
   const book = state.book;
+ 
   const navigate = new useNavigate();
   const onChangeText = (e) => {
     console.log(e.target)
